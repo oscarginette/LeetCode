@@ -1,4 +1,4 @@
 function lengthOfLastWord(s: string): number {
-    let reversed = s.split("").reverse().join("").trim();
-    return reversed.split(" ")[0].length;
+    let words = s.trim().split(" ");
+    return words[words.length - 1].length;
 };
